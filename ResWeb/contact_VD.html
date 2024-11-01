@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Vu Dinh Loc Restaurant</title>
+    <link rel="stylesheet" href="CSS/style1_VD.css">
+    <script src="JS/booking_VD.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <li><a href="home_VD.html">Home</a></li>
+            <li><a href="menu_VD.html">Our Menu</a></li>
+            <li><a href="contact_VD.html" class="active">Contact Us</a></li>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We're eager to connect with you! Share your thoughts, questions, or feedback, and let's make some culinary magic together. We can't wait to hear from you!😄🍽️📩</p>
+    </header>
+
+    <h1 class="booking-heading">Restaurant Booking</h1>
+    <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br>
+        
+        <input type="button" value="Submit Booking" onclick="submitBooking()">
+    </form>
+
+    <div id="bookingDetails"></div>
+
+    <div id="successMessage">
+        <span class="checkmark">&#10004;</span>
+        <p>Thank you for your booking!</p>
+    </div>
+
+    <div class="contact-container">
+        <section id="location-map">
+            <h2>Find Us</h2>
+            <div id="map-container">
+                <iframe width="400" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.6543008148563!2d105.81088267590874!3d20.994319593284376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1648213662221!5m2!1sen!2s"></iframe>
+                <p>Our Location</p>
+            </div>
+        </section>
+            
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address: 214 Nguyen Xien, Thanh Xuan, Ha Noi, Viet Nam</p>
+            <p>Phone: +48 572 563 829</p>
+            <p>Email: lifebouy2002@gmail.com</p>
+        </section>
+
+        <section id="social-media">
+            <h2>Connect With Us</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/vudinhlocrestaurant" target="_blank"><img src="Socialmedia/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/vudinhlocrestaurant" target="_blank"><img src="Socialmedia/insta.png" alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/vudinhloc" target="_blank"><img src="Socialmedia/tx.png" alt="Twitter"></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vu Dinh Loc | ID: 58229 group 3</p>
+    </footer>
+</body>
+</html>

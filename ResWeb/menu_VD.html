@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Vu Dinh Loc Restaurant</title>
+    <link rel="stylesheet" href="CSS/style2_VD.css">
+    <script src="JS/menu_VD.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <li><a href="home_VD.html">Home</a></li>
+            <li><a href="menu_VD.html" class="active">Our Menu</a></li>
+            <li><a href="contact_VD.html">Contact Us</a></li>
+        </div>
+    </nav>
+
+    <section id="menu">
+        <h1>Our Menu</h1>
+
+        <div class="menu-section" id="starters">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <h3 id="starter1">Spring Rolls</h3>
+                <p>Price: $10.99</p>
+                <img src="Food/springrolls.jpg" alt="Spring Rolls">
+                <button onclick="toggleDescription('starter1-description')">More Info</button>
+                <p id="starter1-description" style="display: none;">
+                    Delicious description for Spring Rolls.
+                    <br>Ingredients: Fresh vegetables, shrimp, rice paper
+                    <br>Origin: Vietnam
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="starter2">Dumplings</h3>
+                <p>Price: $8.99</p>
+                <img src="Food/dumplings.jpg" alt="Dumplings">
+                <button onclick="toggleDescription('starter2-description')">More Info</button>
+                <p id="starter2-description" style="display: none;">
+                    Tasty description for Dumplings.
+                    <br>Ingredients: Ground meat, dough
+                    <br>Origin: Various
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="starter3">Something Salad</h3>
+                <p>Price: $7.99</p>
+                <img src="Food/saladd.jpg" alt="Something Salad">
+                <button onclick="toggleDescription('starter3-description')">More Info</button>
+                <p id="starter3-description" style="display: none;">
+                    Fresh and crispy salad.
+                    <br>Ingredients: Fresh vegetables, dressing
+                    <br>Origin: Various
+                </p>
+            </div>
+        
+        </div>
+
+
+        <div class="menu-section" id="main-courses">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <h3 id="mainCourse1">Chicken Teriyaki</h3>
+                <p>Price: $18.99</p>
+                <img src="Food/teriyaki.jpg" alt="Chicken Teriyaki">
+                <button onclick="toggleDescription('mainCourse1-description')">More Info</button>
+                <p id="mainCourse1-description" style="display: none;">
+                    Grilled chicken in teriyaki sauce.
+                    <br>Ingredients: Chicken, teriyaki sauce, vegetables
+                    <br>Origin: Japan
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="mainCourse2">Sushi Platter</h3>
+                <p>Price: $22.99</p>
+                <img src="Food/sushii.jpg" alt="Sushi Platter">
+                <button onclick="toggleDescription('mainCourse2-description')">More Info</button>
+                <p id="mainCourse2-description" style="display: none;">
+                    Assorted sushi selection.
+                    <br>Ingredients: Various fish, rice, seaweed
+                    <br>Origin: Japan
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="mainCourse3">Vietnamese Pho</h3>
+                <p>Price: $14.99</p>
+                <img src="Food/pho1.jpg" alt="Vietnamese Pho">
+                <button onclick="toggleDescription('mainCourse3-description')">More Info</button>
+                <p id="mainCourse3-description" style="display: none;">
+                    Traditional Vietnamese noodle soup.
+                    <br>Ingredients: Rice noodles, broth, herbs
+                    <br>Origin: Vietnam
+                </p>
+            </div>
+         
+        </div>
+
+        <div class="menu-section" id="desserts">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <h3 id="dessert1">Tiramisu</h3>
+                <p>Price: $7.99</p>
+                <img src="Food/tira.jpg" alt="Tiramisu">
+                <button onclick="toggleDescription('dessert1-description')">More Info</button>
+                <p id="dessert1-description" style="display: none;">
+                    Classic Italian dessert with coffee and mascarpone.
+                    <br>Ingredients: Ladyfingers, coffee, mascarpone cheese
+                    <br>Origin: Italy
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="dessert2">Lava Cake</h3>
+                <p>Price: $8.99</p>
+                <img src="Food/lavacake.jpg" alt="Lava Cake">
+                <button onclick="toggleDescription('dessert2-description')">More Info</button>
+                <p id="dessert2-description" style="display: none;">
+                    Warm and gooey chocolate lava cake.
+                    <br>Ingredients: Chocolate, butter, sugar
+                    <br>Origin: Various
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="dessert3">Matcha Ice Cream</h3>
+                <p>Price: $6.99</p>
+                <img src="Food/matcha.jpg" alt="Matcha Ice Cream">
+                <button onclick="toggleDescription('dessert3-description')">More Info</button>
+                <p id="dessert3-description" style="display: none;">
+                    Creamy and flavorful Japanese green tea ice cream.
+                    <br>Ingredients: Matcha powder, cream, sugar
+                    <br>Origin: Japan
+                </p>
+            </div>
+        </div>
+
+        <div class= "menu-section" id="drinks">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <h3 id="drink1">Sake</h3>
+                <p>Price: $12.99</p>
+                <img src="Food/sake.jpg" alt="Sake">
+                <button onclick="toggleDescription('drink1-description')">More Info</button>
+                <p id="drink1-description" style="display: none;">
+                    Japanese rice wine.
+                    <br>Ingredients: Rice, water
+                    <br>Origin: Japan
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="drink2">Beers</h3>
+                <p>Price: $5.99</p>
+                <img src="Food/beers.jpg" alt="Beers">
+                <button onclick="toggleDescription('drink2-description')">More Info</button>
+                <p id="drink2-description" style="display: none;">
+                    Selection of cold and refreshing beers.
+                    <br>Ingredients: Barley, hops, water
+                    <br>Origin: Various
+                </p>
+            </div>
+            <div class="menu-item">
+                <h3 id="drink3">Soft Drinks</h3>
+                <p>Price: $2.99</p>
+                <img src="Food/softdrink.jpg" alt="Soft Drinks">
+                <button onclick="toggleDescription('drink3-description')">More Info</button>
+                <p id="drink3-description" style="display: none;">
+                    Assorted soft drinks and beverages.
+                    <br>Ingredients: Carbonated water, flavorings
+                    <br>Origin: Various
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vu Dinh Loc | ID: 58229 group 3</p>
+    </footer>
+
+    <script>
+        function toggleDescription(descriptionId) {
+            var description = document.getElementById(descriptionId);
+            if (description.style.display === "none") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

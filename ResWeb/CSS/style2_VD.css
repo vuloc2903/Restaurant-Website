@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.navbar a.active {
+    border-bottom: 3px solid #00b600;
+}
+
+#menu {
+    text-align: center;
+    padding: 40px;
+    background-image: url('Res.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-attachment: fixed;
+}
+
+#menu h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: white;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+    color: wheat;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #f7f5f5;
+}
+
+.menu-item {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    color: #00b600;
+}
+
+.menu-item img {
+    max-width: 100%;
+    max-height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-item button {
+    background-color: #00b600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.menu-item button:hover {
+    background-color: #008000;
+}
+
+footer {
+    background-color: #292b2c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
